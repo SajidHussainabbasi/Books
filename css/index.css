@@ -1,12 +1,75 @@
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #c11bc4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;  
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #565454;
+.container {
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #2523a0
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+}
+
+
+.book {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.book img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}    
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input, button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .book img {
+    width: 120px;
+    height: 160px;
+  }
 }

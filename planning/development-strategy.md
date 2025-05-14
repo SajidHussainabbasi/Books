@@ -1,55 +1,44 @@
-# Project Name
+## Development Strategy
 
-<!-- describe your project -->
+1. **Project Setup**
+   - Initialize the project with a clean structure (`api-calls/`, `components/`, `handlers/`, `listeners/`)
+   - Create essential files: `index.html`, `index.css`, `init.js`, and `config.js`
 
----
+2. **API Integration**
+   - Connect to the Open Library API (`https://openlibrary.org/search.json?title=...`)
+   - Use `fetch()` and `async/await` to retrieve book data
+   - Parse and prepare the response for display
 
-## Setup
+3. **UI Rendering**
+   - Create a component to display book info: cover image, title, author(s), and publication year
+   - Render only the first result for simplicity
 
-<!-- what code do you need just to open the project? this might include:
-  - boilerplate code (https://brandlitic.com/what-is-boilerplate-code/)
-  - loading program data
-  - rendering the initial user interface
--->
+4. **Event Handling**
+   - Capture user input from the search bar
+   - Add event listeners for both search button and Enter key
+   - Use a handler to fetch and display results dynamically
 
----
+5. **Styling**
+   - Use Flexbox for layout and center alignment
+   - Make the interface responsive across mobile and desktop
+   - Apply clean visual styles with clear spacing and readable font sizes
 
-<!-- copy this section once for each must-have user story -->
+6. **Error Handling**
+   - Handle empty input or failed API responses gracefully
+   - Show user-friendly messages like “No results found.”
 
-## user story
+7. **Modularization**
+   - Maintain separation of concerns:
+     - `api-calls/`: API logic
+     - `components/`: UI rendering
+     - `handlers/`: data processing
+     - `listeners/`: user interaction setup
 
-<!-- each issue created from this section will have the `for: user story` label -->
+8. **Testing & Validation**
+   - Manually test input scenarios, including edge cases (empty, gibberish)
+   - Test responsiveness on mobile and desktop
 
-> "as a ... i can ... so that ..."
-
-<!-- write any extra notes or description -->
-
-<!-- describe the tasks to build this user story
-  these will have the `type: logic` label, for example
-  not all projects will have all types of tasks
-  and these are not the only possible types, just some suggestions
--->
-
-### Logic: user story
-
-- a _logic_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
-
-### Interface: user story
-
-- an _interface_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
-
-### Interaction: user story
-
-- an _interaction_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
-
-### Documentation: user story
-
-- a _documentation_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
+9. **Final Touches**
+   - Refactor and clean up code
+   - Optimize for performance and simplicity
+   - Document the project’s usage and structure
