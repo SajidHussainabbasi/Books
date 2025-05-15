@@ -56,6 +56,29 @@ input, button {
   margin-bottom: 10px;
 }    
 
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#bookInput,
+#searchBtn {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+}
+
+#searchBtn {
+  cursor: pointer;
+}
+
+#message {
+  color: red;
+  font-size: 14px;
+}
 /* Responsive design for mobile devices */
 @media (max-width: 600px) {
   .search-bar {

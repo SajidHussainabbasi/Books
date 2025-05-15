@@ -1,9 +1,10 @@
 # Books
-> The **Books** project allows users to search for books by title using the Open Library API. When a user enters a book title, the app fetches and displays key information such as the book's image, name, author(s), and first publication year. This is a simple and interactive way to explore book data from a vast, open-source library.
+> The **Books** project allows users to search for books by title using the Open Library API. When a user enters a book title, the app fetches and displays key information such as the book's image, name, author(s), and first publication year and language. This is a simple and interactive way to explore book data from a vast, open-source library.
 
 - [Books](#books)
   - [General Info](#general-info)
   - [Screenshots](#screenshots)
+  - [](#)
   - [Code Example](#code-example)
   - [Technologies](#technologies)
   - [Status](#status)
@@ -23,6 +24,7 @@
 ![Books Search Example](book1.png)
 ![Books Layout](Book2.png)
 ![Books Search Example](Book3.png)
+![Books Search Example](Book4.png)
 ---
 
 ## Code Example

@@ -17,6 +17,7 @@ export const renderBookList = (books) => {
   const imageUrl = coverId
     ? `https://covers.openlibrary.org/b/id/${coverId}-M.jpg`
     : DEFAULT_BOOK_IMAGE;
+  const language = book.language ? book.language.join(", ").toUpperCase() : "Unknown";
 
   resultDiv.innerHTML = `
     <div class="book">
@@ -24,6 +25,7 @@ export const renderBookList = (books) => {
       <h3>${title}</h3>
       <p><strong>Author:</strong> ${authors}</p>
       <p><strong>First Published:</strong> ${year}</p>
+      <p><strong>Language:</strong> ${language}</p>
     </div>
   `;
 };
