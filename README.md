@@ -4,7 +4,6 @@
 - [Books](#books)
   - [General Info](#general-info)
   - [Screenshots](#screenshots)
-  - [](#)
   - [Code Example](#code-example)
   - [Technologies](#technologies)
   - [Status](#status)
